@@ -42,8 +42,13 @@
     font-size: 1.2rem;
     font-family: monospace;
     font-weight: 600;
+    transition: .5s;
 }
-
+.nav ul li:hover{
+  color: coral;
+  border:1px solid #27bcda;
+  padding:5px 5px;
+}
 /**Main Body */
 .main-page{
     
@@ -152,6 +157,10 @@ display: flex;
 .about-image img{
     height: 500px;
 }
+.about-image img:hover{
+  transform: rotate(10deg);
+  transition: 2s;
+}
 .about-title{
     flex: 1;
     justify-content: center;
@@ -162,8 +171,18 @@ text-align: center;
 padding: 30px;
 margin: 20px;
 }
+.about-title h1:hover {
+  font-style: italic;
+  padding: 5px;
+  border: 1px solid #3f6db9;
+}
+
 .about-title img{
     overflow: hidden;
+}
+.about-title img:hover{
+  transform: rotate(40deg);
+  transition: 1s;
 }
 .about-title p{
     padding: 50px;
@@ -195,6 +214,13 @@ margin: 20px;
     
     
 }
+.team-box:hover{
+  
+  border-radius: 20px;
+  background: rgb(228,28,193);
+  background: linear-gradient(191deg, rgba(228,28,193,1) 0%, rgba(13,36,231,0.9023984593837535) 100%);
+}
+
 .team-box{
     flex: 1;
     display: flex;
@@ -202,7 +228,7 @@ margin: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+   
 }
 .team-box h1{
     padding:20px 20px;
@@ -212,10 +238,7 @@ margin: 20px;
     text-shadow: 1px 2px 3px #3f6db9 ;
     padding-top: 100px;
 }
-.team-box p{
-    
-    
-}
+
 .team-box img{
     height: 400px;
 }
@@ -233,6 +256,12 @@ margin: 20px;
     
     margin: 30px auto;
     width: 90%;
+}
+.features-box:hover{
+  box-shadow: 2px 3px 5px rgb(228,28,193) ;
+  border-radius: 20px;
+  background: rgb(228,28,193);
+  background: linear-gradient(191deg, rgba(228,28,193,1) 0%, rgba(13,36,231,0.9023984593837535) 100%);
 }
 .features-box{
     flex: 1;
