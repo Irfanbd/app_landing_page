@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    flex: 1;
+    height: 5.5rem;
+    background: linear-gradient(191deg, rgba(234,245,255,1) 0%, rgba(190,224,255,1) 47%, rgba(205,232,255,1) 100%);
+}
+.logo{
+    flex: 1;
+}
+.logo img{
+    height: 4.5rem;
+    padding: .8rem;
+    margin-left: 2rem;
+}
+.nav{
+    flex: 1;
+    
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+    margin:  0 auto;
+    
+    flex-direction: row;
+    justify-content: center;
+}
+.nav ul li{
+    align-items: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+
+/**Main Body */
+.main-page{
+    
+    height:88.5vh;
+    background: rgb(234,245,255);
+    background: linear-gradient(191deg, rgba(234,245,255,1) 0%, rgba(28,123,208,1) 20%, rgba(140,177,210,1) 47%, rgba(196,227,255,1) 68%, rgba(205,232,255,1) 100%);
+    display: flex;
+}
+.home-title{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home-title p{
+    text-align: center;
+    padding: 3rem;
+    font-family: cursive;
+    color: coral;
+    font-weight: 600;
+    font-size: large;
+    text-shadow: 4px 6px 8px cornflowerblue
+}
+.home-title h1{
+    font-size: 3rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-shadow:4px 4px 12px pink;
+}
+.home-image{
+    flex: 1;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.home-image img{
+    height: 20rem;
+    
+}
+@media (max-width:800px) {
+    .navbar{
+      flex-direction: column;
+    }
+    }
+    @media (max-width:800px) {
+        .navbar .nav ul{
+          flex-direction: column;
+        }
+        }
+
+        @media (max-width:800px) {
+            .main-page{
+              flex-direction: column;
+            }
+            }
+            @media (max-width:800px) {
+                .home-title{
+                  flex-direction: column;
+                  margin-top: 400px;
+                }
+                }
+                @media (max-width:800px) {
+                    .home-image img{
+                      
+                      height: 40%;
+                      
+                    }
+                    }
