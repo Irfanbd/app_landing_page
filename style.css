@@ -225,3 +225,244 @@ margin: 20px;
       margin-top: 600px;
     }
     }
+
+/** App Features */
+.app-features{
+    height: 500px;
+    display: flex;
+    
+    margin: 30px auto;
+    width: 90%;
+}
+.features-box{
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    text-align: center;
+    border-radius: 30px;
+    background: linear-gradient(191deg, rgba(234,245,255,1) 0%, rgba(190,224,255,1) 47%, rgba(205,232,255,1) 100%);
+}
+.features-box h1,p{
+padding: 20px 20px;
+}
+.features-box img{
+height: 20%;    
+    
+}
+@media (max-width:800px) {
+    .app-features{
+      flex-direction: column;
+      margin-top: 1000px;
+    }
+    }
+    @media (max-width:800px) {
+        .features-box{
+          flex-direction: column;
+          height: 400px;
+          
+        }
+        }
+/**image slider */
+/**Second Image Slider */
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.Second-slider {
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  width: 90vw;
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+  font-size:50px;
+  font-family: dancing script;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: black;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+
+@media (max-width:800px) {
+    .Second-slider{
+      flex-direction: column;
+      margin-top: 700px;
+    }
+    }
+
+/**footer*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(191deg, rgba(234,245,255,1) 0%, rgba(190,224,255,1) 47%, rgba(205,232,255,1) 100%);
+    height: auto;
+    width: 80vw;
+    margin:  0 auto;
+    padding-top: 40px;
+    color: coral;
+  }
+  .footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: coral;
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+    
+  }
+  
+  .socials li{
+    margin: 0 10px;
+  }
+  
+  .socials a{
+    text-decoration: none;
+    color: coral;
+    border: 1px solid coral;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  .footer-content img{
+      width: 100%;
+    height: 100px;
+      
+  }
+  .socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+  }
+  
+  .socials a:hover i{
+    color: aqua;
+  }
+  .footer-bottom{
+    background: linear-gradient(191deg, rgba(234,245,255,1) 0%, rgba(190,224,255,1) 47%, rgba(205,232,255,1) 100%);
+    width: 80vw;
+    margin:  0 auto;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .footer-bottom p{
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .footer-bottom p a{
+   color: black;
+   font-size: 16px;
+   text-decoration: none;
+  }
+  .footer-bottom span{
+     text-transform: uppercase;
+     opacity: .4;
+     font-weight: 200;
+  }
+  .footer-menu{
+    float: right;
+  }
+  
+  .footer-menu ul{
+    display: flex;
+  }
+  
+  .footer-menu ul li{
+  padding-right: 10px;
+  display: block;
+  }
+  
+  .footer-menu ul li a{
+    color: coral;
+    text-decoration: none;
+  }
+  
+  .footer-menu ul li a:hover{
+    color: #27bcda;
+  }
+  @media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    }
